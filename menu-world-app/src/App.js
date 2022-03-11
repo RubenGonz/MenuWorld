@@ -1,18 +1,22 @@
 import ReactDOM from "react-dom";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
 import NoPage from "./pages/NoPage/NoPage";
 
 export default function App() {
-  return (
-      <Routes>
-        <Route path="/" element={<Home />}>
-          <Route index element={<Home />} />
-          <Route path="page-not-found" element={<NoPage />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
-  );
+    return (
+        <Router>
+            <Header />
+            <hr />
+            <Routes>
+                <Route path="/home" element={<Home />} />
+                <Route path="/nopage" element={<NoPage />} />
+                <Route path="*" element={<NoPage />} />
+                <Route path="/" element={<Home />} />
+            </Routes>
+        </Router >
+    );
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));
