@@ -1,11 +1,11 @@
 import './Style.scss';
 
-function Home() {
+function Register() {
   return (
     <div className="Rojo">
-      Hola Lore, este es el home
+      Hola
     </div>
   );
 }
 
-export default Home;
+export default Register;
