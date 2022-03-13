@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './assets/fonts/Logotype typography.ttf';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

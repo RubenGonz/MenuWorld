@@ -1,24 +1,40 @@
-$altura-nav: 80px;
-$imgLogo : $altura-nav - 10px;
+@import "../../assets/Variables.scss"; 
 
 nav {
-  height: $altura-nav;
-}
+  height: $nav-height;
 
-.imgLogo {
-  height: $imgLogo;
-}
+  background: radial-gradient(150px 30px at 160px bottom, $nav-background-color-lighten-1, $nav-background-color-lighten-2, $nav-background-color);
+  border-bottom: 3px solid $nav-border-color;
 
-.nombreLogo {
-  font-size: 1.25rem;
-  color: black;
-  text-decoration: none;
+  a {
 
-  &:active, &:link, &:visited {
-    text-decoration: none;
+    &:active,
+    &:link,
+    &:visited {
+      color: black;
+      text-decoration: none;
+    }
   }
-}
 
-hr {
-  color: black;
+  button {
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 7px;
+  }
+
+  .logotype {
+    font-family: "Logotipo";
+    font-size: 2rem;
+  }
+
+  .imgLogotype {
+    height: $nav-logo-size;
+  }
+
+  hr {
+    color: black;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 2px;
+  }
 }

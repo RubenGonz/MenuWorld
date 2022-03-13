@@ -1,5 +1,69 @@
-$Rojo: red;
+@import "../../assets/Variables.scss";
 
-.Rojo {
-  background-color: $Rojo;
+footer {
+    background-color: $nav-background-color;
+	background: radial-gradient(200px 50px at top, $nav-background-color-lighten-1, $nav-background-color-lighten-2, $nav-background-color);
+    margin-top: 5vh;
+    padding-top: 10px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, 0.15);
+    border-top: 3px solid $footer-border-color;
+
+    .imgLogotype {
+        height: $footer-logo-size;
+    }
+
+    .logotype {
+        font-family: "Logotipo";
+        font-size: 3rem;
+    }
+
+    .personalInformation {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .socialMediaBar {
+        list-style-type: none;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+        li {
+            display: flex;
+            align-items: center;
+
+            &>* {
+                margin: 5px;
+            }
+        }
+
+        img {
+            height: 2rem;
+        }
+    }
+
+    .ayudaUsuario {
+        list-style-type: none;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+        li {
+            margin: 5px;
+        }
+    }
+
+    a {
+
+        &:link,
+        &:hover,
+        &:visited {
+            color: black;
+            text-decoration: none;
+        }
+    }
+	
 }
