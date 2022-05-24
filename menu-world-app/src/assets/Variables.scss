@@ -1,16 +1,18 @@
 // GENERAL
 
 $primary-color: #56ab2f;
+$secundary-color: #85b170;
+$main-bg-color: lighten($primary-color, 45%);
+$content-bg-color: lighten($primary-color, 30%);
+$light-black:#212529;
 
 // HEADER
 
 $nav-height: 80px;
-
 $nav-background-color: $primary-color;
 $nav-background-color-lighten-1: lighten($nav-background-color, 75%);
 $nav-background-color-lighten-2: lighten($nav-background-color, 30%);
 $nav-border-color: darken($nav-background-color, 15%);
-
 $nav-logo-size: calc($nav-height - 10px);
 
 // FOOTER
@@ -19,5 +21,14 @@ $footer-background-color: $primary-color;
 $footer-background-color-lighten-1: lighten($nav-background-color, 75%);
 $footer-background-color-lighten-2: lighten($nav-background-color, 30%);
 $footer-border-color: darken($nav-background-color, 15%);
-
 $footer-logo-size: 90px;
+
+// NO PAGE
+
+$alert-background-color: $primary-color;
+$alert-border-color: darken($alert-background-color, 15%);
+
+// LOGIN CARD
+
+$login-card-bg-color: $primary-color;
+$login-card-border-color: darken($login-card-bg-color, 15%);

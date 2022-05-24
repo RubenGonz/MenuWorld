@@ -10,13 +10,13 @@ function Footer() {
     return (
         <footer>
             <div className='my-3'>
-                <Link to="/home" className='d-flex justify-content-center align-items-center'>
-                    <img src={Logotype} alt="MenuWorld logotype" class="imgLogotype mx-2" />
+                <Link to="/" className='d-flex justify-content-center align-items-center'>
+                    <img src={Logotype} alt="MenuWorld logotype" className="imgLogotype mx-2" />
                     <span className='logotype mx-2'>MenuWorld</span>
                 </Link>
             </div>
-            <div class="personalInformation">
-                <ul class="socialMediaBar my-3">
+            <div className="personalInformation">
+                <ul className="socialMediaBar my-3">
                     <li>
                         <div><a href="https://www.facebook.com/people/Rub%C3%A9n-Gonz%C3%A1lez-Rodr%C3%ADguez/100011142169001/"><img src={Facebook} alt="Facebook logotype" /></a></div>
                         <div><a href="https://www.facebook.com/people/Rub%C3%A9n-Gonz%C3%A1lez-Rodr%C3%ADguez/100011142169001/">Rubén González Rodríguez</a></div>
@@ -35,7 +35,7 @@ function Footer() {
                     </li>
                 </ul>
 
-                <ul class="ayudaUsuario my-3">
+                <ul className="ayudaUsuario my-3">
                     <li>Ayuda</li>
                     <li>¿Cómo funciona?</li>
                     <li>Términos y condiciones</li>
@@ -44,7 +44,6 @@ function Footer() {
                     <li>Mapa del sitio</li>
                 </ul>
             </div>
-
         </footer>
     );
 }

@@ -1,8 +1,11 @@
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import MenuWorld from "./pages/MenuWorld/MenuWorld";
 import Home from "./pages/Home/Home";
+import SignIn from "./pages/SignIn/SignIn";
+import Profile from "./pages/Profile/Profile";
+import Recipe from "./pages/Recipe/Recipe";
 import NoPage from "./pages/NoPage/NoPage";
 
 export default function App() {
@@ -11,11 +14,13 @@ export default function App() {
             <Header />
             <Routes>
                 <Route path="/home" element={<Home />} />
+                <Route path="/sign_in" element={<SignIn />} />
+                <Route path="/profile" element={<Profile />} />                
+                <Route path="/profile/recipe" element={<Recipe />} />                
                 <Route path="/nopage" element={<NoPage />} />
                 <Route path="*" element={<NoPage />} />
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<MenuWorld />} />
             </Routes>
-            <Footer />
         </Router >
     );
 }

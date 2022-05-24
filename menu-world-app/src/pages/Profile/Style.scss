@@ -1,0 +1,152 @@
+@import "../../assets/Variables.scss";
+
+main.profile {
+  background: $main-bg-color;
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .content {
+    margin: 10px;
+    background: $content-bg-color;
+    max-width: 900px;
+    width: 900px;
+    border: 2px solid $login-card-border-color;
+    box-shadow: 0px 0px 10px 5px $secundary-color, inset 0px 0px 5px 1px white;
+    padding: 2rem;
+    border-radius: 1rem;
+
+    .infoSection {
+      display: flex;
+
+      .userImage {
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+        border: 1px solid $light-black;
+        align-self: center;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+
+      .userInfo {
+
+        .userName,
+        .userJob {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+
+      &>* {
+        flex: 1 0;
+        background: $login-card-bg-color;
+        border: 2px solid $login-card-border-color;
+        box-shadow: 0px 0px 10px 5px $secundary-color, inset 0px 0px 5px 1px white;
+        border-radius: 0.5rem;
+        margin: 10px;
+        font-weight: bold;
+        transition: 0.3s;
+
+        &:first-of-type {
+          margin-left: 0;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        &:hover {
+          background: lighten($primary-color, 30%);
+        }
+      }
+    }
+
+    .recipes {
+
+      &>h2 {
+        margin: 10px 0px 20px 2rem;
+      }
+
+      .accordion {
+        box-shadow: 0px 0px 10px 5px $secundary-color;
+        border-radius: 10px;
+
+        .accordion-item {
+          border: 0;
+
+          .accordion-header {
+            .accordion-button {
+              background: $login-card-bg-color;
+              border: 2px solid $login-card-border-color;
+              box-shadow: inset 0px 0px 5px 1px white;
+              font-weight: bold;
+              transition: 0.3s;
+              color: black;
+
+              &:not(.collapsed)::after {
+                background-image: url(../../assets/images/accordionButton.svg);
+              }
+            }
+          }
+
+          .accordion-body {
+            border-left: 2px solid $login-card-border-color;
+            border-right: 2px solid $login-card-border-color;
+            background: $main-bg-color;
+            max-height: 80vh;
+            overflow-y: scroll;
+          }
+
+          &:first-of-type {
+            border-radius: 10px 10px 0px 0px;
+
+            .accordion-button {
+              border-radius: 10px 10px 0px 0px;
+            }
+          }
+
+          &:last-of-type {
+            border-radius: 0px 0px 10px 10px;
+
+            .accordion-button {
+              border-radius: 0px 0px 10px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 700px) {
+  main.profile {
+
+    .content {
+
+      .infoSection {
+        display: flex;
+        flex-flow: column;
+
+        .userImage {
+          width: 200px;
+          height: 200px;
+          border-radius: 100px;
+        }
+      }
+
+      .buttons {
+        display: flex;
+        flex-flow: column;
+
+        &>* {
+          margin: 5px 0px;
+        }
+      }
+    }
+  }
+}

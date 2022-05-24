@@ -1,5 +1,20 @@
-$Rojo: red;
+@import "../../assets/Variables.scss";
 
-.Rojo {
-  background-color: $Rojo;
+main.home {
+    background: $main-bg-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .content {
+        margin: 10px;
+        background: $content-bg-color;
+        max-width: 900px;
+        width: 900px;
+        border: 2px solid $login-card-border-color;
+        box-shadow: 0px 0px 10px 5px $secundary-color, inset 0px 0px 5px 1px white;
+        padding: 2rem;
+        border-radius: 1rem;
+
+    }
 }

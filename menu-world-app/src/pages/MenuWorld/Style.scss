@@ -1,0 +1,72 @@
+@import "../../assets/Variables.scss";
+
+main.menuWorld {
+  background: $main-bg-color;
+
+  section {
+    min-height: 70vh;
+    flex-wrap: wrap;
+
+    &:last-child {
+      min-height: 30vh;
+    }
+  }
+
+  .sectionFragment {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0;
+
+    .introduction {
+      max-width: 70%;
+
+      .title {
+        font-family: "Logotipo";
+        font-size: 3.5rem;
+        color: $light-black;
+        margin-bottom: 30px;
+      }
+
+      .text {
+        font-size: 1.5rem;
+        color: $light-black;
+      }
+    }
+
+    .introductionImg {
+      height: 450px;
+      width: 90%;
+      background: url(../../assets/images/FoodImage1.jpg);
+      background-position: center;
+      border-radius: 2rem;
+      box-shadow: inset 0px 0px 10px 10px $main-bg-color;
+      opacity: 0.7;
+    }
+
+    .introductionVideo {
+      border-radius: 2rem;
+      box-shadow: 0px 0px 10px 5px $secundary-color;
+      width: 75%;
+    }
+
+    &:last-child {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media all and (max-width: 700px) {
+  main.profile {
+
+    .content {
+      min-width: 350px;
+    }
+  }
+}

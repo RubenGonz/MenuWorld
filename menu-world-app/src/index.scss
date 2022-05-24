@@ -1,3 +1,5 @@
+@import "assets/Variables.scss";
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -16,4 +18,25 @@ code {
     font-family: "Logotipo";
     src: url('./assets/fonts/Logotype typography.ttf');
     font-weight: bold;
-};
+}
+
+;
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $secundary-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $primary-color;
+}

@@ -3,12 +3,12 @@
 footer {
     background-color: $nav-background-color;
 	background: radial-gradient(200px 50px at top, $nav-background-color-lighten-1, $nav-background-color-lighten-2, $nav-background-color);
-    margin-top: 5vh;
     padding-top: 10px;
     padding-left: 15vw;
     padding-right: 15vw;
     box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, 0.15);
     border-top: 3px solid $footer-border-color;
+    height: 100%;
 
     .imgLogotype {
         height: $footer-logo-size;

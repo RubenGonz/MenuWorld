@@ -1,0 +1,88 @@
+@import "../../assets/Variables.scss";
+
+.recipeCard {
+  border: 2px solid $login-card-border-color;
+  box-shadow: 0px 0px 10px 5px $secundary-color, inset 0px 0px 5px 1px white;
+  padding: 10px;
+  border-radius: 0.75rem;
+  display: block;
+  margin: 15px 0px;
+  transition: 0.3s;
+  color: $light-black;
+  text-decoration: none;
+  background: $main-bg-color;
+
+  .recipeHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .recipeName {
+      margin-bottom: 0;
+      font-family: "Logotipo";
+    }
+
+    .recipeOwner {
+      margin-bottom: 0;
+      color: $light-black;
+      text-decoration: none;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    .likes {
+
+      h2 {
+        padding-top: 0;
+        margin-top: 0;
+      }
+
+      .likeImage {
+        margin-left: 5px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .recipeInfo {
+    display: flex;
+    align-items: center;
+
+    .recipeImage {
+      border: 1px solid;
+      height: 150px;
+      width: 150px;
+      margin: 10px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .allergens {
+      padding-left: 0;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      list-style: none;
+
+      .allergenSimbol {
+        margin: 0px 3px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  &:hover {
+    background: $content-bg-color;
+    color: $light-black;
+  }
+}
+
+@media all and (max-width: 700px) {
+
+  .recipeInfo {
+    display: flex;
+    flex-flow: column;
+  }
+}

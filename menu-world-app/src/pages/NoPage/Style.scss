@@ -1,0 +1,61 @@
+@import "../../assets/Variables.scss";
+
+main.noPage {
+    background: $main-bg-color;
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .imagen {
+        height: 450px;
+        width: 90%;
+        background: url(../../assets/images/FoodImage1.jpg);
+        background-position: center;
+        box-shadow: inset 0px 0px 10px 10px $main-bg-color;
+        opacity: 0.7;
+
+        &:nth-of-type(2) {
+            transform: scaleX(-1);
+        }
+    }
+
+    .alert-box {
+        background: $alert-background-color;
+        border: 2px solid $login-card-border-color;
+        border-radius: 25px;
+        box-shadow: 0px 0px 10px 5px $secundary-color, inset 0px 0px 5px 1px white;
+        width: 500px;
+        height: 500px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+
+        .error-type {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2rem;
+        }
+
+        .error-message {
+            font-family: "Logotipo";
+            font-size: 3rem;
+        }
+
+        .link {
+            text-decoration: none;
+            font-weight: bold;
+            color: $light-black;
+            font-size: 1.5rem;
+
+            .linkText {
+                margin-bottom: 20px;
+            }
+
+            .linkedImg {
+                width: 100px;
+            }
+        }
+    }
+}

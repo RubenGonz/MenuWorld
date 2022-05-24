@@ -1,0 +1,62 @@
+@import "../../assets/Variables.scss";
+
+.search-pane {
+  display: flex;
+
+  &>h2 {
+    font-family: "Logotipo";
+    margin-bottom: 0;
+  }
+
+  &>* {
+    padding: 0.5rem;
+  }
+
+  &>input {
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  &>*:last-child {
+    border-radius: 0 1rem 1rem 0;
+  }
+
+  &>input {
+    flex: 1 0;
+    border: 2px solid #386f1f;
+  }
+
+  &>button {
+    background: $primary-color;
+    background: #56ab2f;
+    border: 2px solid #386f1f;
+    box-shadow: inset 0px 0px 5px 1px white;
+    font-weight: bold;
+    transition: 0.3s;
+
+    &:hover {
+      background: lighten($primary-color, 30%);
+    }
+  }
+
+  &>select {
+    background: $primary-color;
+    background: #56ab2f;
+    border: 2px solid #386f1f;
+    box-shadow: inset 0px 0px 5px 1px white;
+    font-weight: bold;
+    transition: 0.5s;
+  
+    option {
+      background: $primary-color;
+      background: #56ab2f;
+      border: 2px solid #386f1f;
+      box-shadow: inset 0px 0px 5px 1px white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+  
+    &:hover {
+      background: lighten($primary-color, 30%);
+    }
+  }
+}
